@@ -1,0 +1,76 @@
+<div class="container">
+<div class="row justify-content-center mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <!-- <div class="card-header"></div> -->
+                            <div class="card-body">
+                                <div class="form-group mt-2 d-flex justify-content-center align-items-center">
+                                <img src="assets/logo.png">
+                                </div>
+                                <div class="form-group mt-2 d-flex justify-content-center align-items-center">
+                                  <span> Don't have an Account? Create your account it takes less tahn minute</span>
+                                </div>
+                                <form [formGroup]="signupForm" class="form-horizontal" method="post" action="#">
+
+                                    <div class="form-group mt-2">
+                                        <label for="name" class="cols-sm-2 control-label">First Name</label>
+                                        <div class="cols-sm-10 mt-2">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" formControlName="firstname" name="name" id="name" placeholder="Enter your first Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="name" class="cols-sm-2 control-label">Last Name</label>
+                                        <div class="cols-sm-10 mt-2">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control"formControlName="lastname" name="name" id="name" placeholder="Enter your last Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="email" class="cols-sm-2 ">Email</label>
+                                        <div class="cols-sm-10 mt-2">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" formControlName="email" name="email" id="email" placeholder="Enter your Email" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="number" class="cols-sm control-label asterisk-icon">Mobile Number</label>
+                                        <div class="cols-sm-10 mt-2">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" formControlName="number"  name="password" id="password" placeholder="Enter your Password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="password" class="cols-sm ">Password</label>
+                                        <div class="cols-sm-10 mt-2">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" formControlName="password" name="password" id="password" placeholder="Enter your Password" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="form-group mt-2">
+                                        <button type="button" class="btn btn-lg btn-block login-button" (click)="OnSubmit()">Sign Up</button>
+                                    </div>
+                                 
+                                  
+                                </form>
+                               
+                            </div>
+
+                        </div>
+                        <div class="form-group mt-2 d-flex justify-content-center align-items-center">
+                            Already have Account? <span style="color: blue;font-weight: bold;"><a routerLink="/login" style="margin-left:1px ; color: white;"> Login</a></span>
+                        </div>
+                    </div>
+                </div>
+</div>

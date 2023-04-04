@@ -1,0 +1,50 @@
+
+<div class="container ">
+    <div class="row justify-content-center  margin">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- <div class="card-header"></div> -->
+                                <div class="card-body">
+                                    <div class="form-group mt-2 d-flex justify-content-center align-items-center">
+                                        <img src="assets/logo.png">
+                                        </div>
+                                    <form [formGroup]="loginForm" class="form-horizontal" method="post" action="#">
+
+                                        <div class="form-group mt-2">
+                                            <label for="email" class="cols-sm-2 ">Email or Phone number</label>
+                                            <div class="cols-sm-10 mt-2">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                    <input type="text" class="form-control" formControlName="email" name="email" id="email" placeholder="Enter your Email" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="password" class="cols-sm ">Password</label>
+                                            <div class="cols-sm-10 mt-2">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                    <input type="password" class="form-control" formControlName="password" name="password" id="password" placeholder="Enter your Password" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="form-group mt-2">
+                                            <button type="button" class="btn btn-lg btn-block login-button" (click)="OnSubmit()" >Login</button>
+                                        </div>
+                                     
+                                      
+                                    </form>
+                                   
+                                </div>
+    
+                            </div>
+                            <div class="form-group mt-2 d-flex justify-content-center align-items-center" style="margin-left: 20px;">
+                               <span style="color: blue;font-weight: bold;"> <a routerLink="/forgetpassword">Forget Your password ?</a></span>
+                             </div>
+                            <div class="form-group mt-2 d-flex justify-content-center align-items-center" style="margin-left: 20px;">
+                               Don't have account ? <span style="color: blue;font-weight: bold;"> <a routerLink="/signup" style="margin-left: 1px; color: white;"> Sign Up </a> </span>
+                            </div>
+                        </div>
+                    </div>
+    </div>
