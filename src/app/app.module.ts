@@ -9,6 +9,8 @@ import { OtpPageComponent } from './otp-page/otp-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,15 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut:2000,
+      positionClass:'toast-top-right',
+      preventDuplicates:true,
+      maxOpened:0
+
+    }) 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
